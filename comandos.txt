@@ -1,0 +1,86 @@
+Microsoft Windows [Versión 10.0.22621.1992]
+(c) Microsoft Corporation. Todos los derechos reservados.
+
+C:\Users\Rafa\Desktop\clase 16>git init .
+Initialized empty Git repository in C:/Users/Rafa/Desktop/clase 16/.git/
+
+C:\Users\Rafa\Desktop\clase 16>git add +
+fatal: pathspec '+' did not match any files
+
+C:\Users\Rafa\Desktop\clase 16>git add *
+fatal: pathspec '*' did not match any files
+
+C:\Users\Rafa\Desktop\clase 16>git add *
+
+C:\Users\Rafa\Desktop\clase 16>git status
+On branch master
+
+No commits yet
+
+Changes to be committed:
+  (use "git rm --cached <file>..." to unstage)
+        new file:   Hola.txt
+
+
+C:\Users\Rafa\Desktop\clase 16>git commit -m "Version 1.0 de la app de coder"
+[master (root-commit) d083125] Version 1.0 de la app de coder
+ 1 file changed, 1 insertion(+)
+ create mode 100644 Hola.txt
+
+C:\Users\Rafa\Desktop\clase 16>git status
+On branch master
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        modified:   Hola.txt
+
+no changes added to commit (use "git add" and/or "git commit -a")
+
+C:\Users\Rafa\Desktop\clase 16>git status
+On branch master
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        modified:   Hola.txt
+
+no changes added to commit (use "git add" and/or "git commit -a")
+
+C:\Users\Rafa\Desktop\clase 16>git add*
+git: 'add*' is not a git command. See 'git --help'.
+
+The most similar command is
+        add
+
+C:\Users\Rafa\Desktop\clase 16>git add+
+git: 'add+' is not a git command. See 'git --help'.
+
+The most similar command is
+        add
+
+C:\Users\Rafa\Desktop\clase 16>git add *
+
+C:\Users\Rafa\Desktop\clase 16>git status
+On branch master
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+        modified:   Hola.txt
+
+
+C:\Users\Rafa\Desktop\clase 16>git commit -m "Version 2.0"
+[master ced88ac] Version 2.0
+ 1 file changed, 5 insertions(+), 1 deletion(-)
+
+C:\Users\Rafa\Desktop\clase 16>git log
+commit ced88acc72d9d2e73028dc4e36a27dc5e89e90b0 (HEAD -> master)
+Author: rafaelafromthevalley <rafaelavilap@gmail.com>
+Date:   Tue Jul 25 18:57:11 2023 -0400
+
+    Version 2.0
+
+commit d083125585d4e28dbcb5fde424e97a2f14c50349
+Author: rafaelafromthevalley <rafaelavilap@gmail.com>
+Date:   Tue Jul 25 18:53:14 2023 -0400
+
+    Version 1.0 de la app de coder
+
+C:\Users\Rafa\Desktop\clase 16>git log --oneline
